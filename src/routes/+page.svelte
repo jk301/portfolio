@@ -1,4 +1,6 @@
-
+<script>
+    import { projects } from "#lib/projects.ts";
+</script>
 <div class="about-section">
     <div class="hello-div">
         <h1>HELLO THERE!</h1>
@@ -89,14 +91,53 @@
     <div class="section-header">
         <h1>Projects</h1>
     </div>
+
+    <div class="project-card-container">
+        {#each projects as project}
+
+            <div class="project-card">
+                <img src={project.imgSrc} alt={project.title}>
+
+                <div class="project-card-detail">
+                    <h2>{project.title}</h2>
+                    <p>Status: {project.status}</p>
+                    <h4>{project.description}</h4>
+
+                    <div class="project-stack">
+                        {#each project.stack as stack }
+                            <p>{stack}</p>
+                        {/each}
+                    </div>
+
+                </div>
+
+                <div class="project-card-buttons">
+                    <a href={project.link} target="_blank" ><button>Live site link</button></a>
+                    <a href={project.repo} target="_blank" ><button>Repo link</button></a>
+                </div>
+
+            </div>
+
+        {/each}
+
+    </div>
+
+    <h3>More projects are available <a href="https://github.com/jk301" target="_blank">here</a></h3>
     
 </div>
 
-<!-- 
-<div class="contact-section">
+
+<!-- <div class="contact-section">
     <div class="section-header">
-        <h1>My contact details (later)</h1>
+        <h1>contact details</h1>
+    </div>
+
+    <div>
+        <div>
+            <p>jk7948677@gmail.com</p>
+        </div>
+        <button>copy</button>
     </div>
     
-</div>
--->
+</div> -->
+

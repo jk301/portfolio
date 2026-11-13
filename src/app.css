@@ -114,3 +114,86 @@ body {
 
     margin-top: 7rem;
 }
+
+.project-card-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+
+    gap: 3rem;
+    margin: 4rem 0 4rem 0;
+}
+
+.project-card {
+    display: flex;
+
+    padding: 20px;
+
+    gap: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.project-card > img { 
+    width: auto;
+    height: 200px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.project-card-detail > h2 {
+    margin-top: 0;
+}
+
+.project-stack {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 5px;
+}
+.project-stack > p {
+    margin: 0;
+
+    font-size: 0.8rem;
+
+    text-align: center;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.project-card-buttons {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+.project-card-buttons > a > button {
+    font-family: inherit;
+    font-size: 1rem;
+    
+    white-space: nowrap;
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.project-card-buttons > a > button:hover {
+    color: grey;
+}
+
+
+/* Contact section */
+
+.contact-section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 4rem;
+}
