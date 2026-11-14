@@ -1,5 +1,15 @@
 <script>
     import { projects } from "#lib/projects.ts";
+
+    let copy = $state(false)
+
+    async function copyLink () {
+        navigator.clipboard.writeText('jk7948677@gmail.com')
+
+        copy = true
+        await new Promise(( resolve ) => setTimeout( resolve, 1000 ))
+        copy = false
+    }
 </script>
 <div class="about-section">
     <div class="hello-div">
@@ -127,17 +137,27 @@
 </div>
 
 
-<!-- <div class="contact-section">
+<div class="contact-section">
     <div class="section-header">
         <h1>contact details</h1>
     </div>
 
-    <div>
-        <div>
+    <div class="contact-text" >
+        <h4>If you have some query about anything here or about anything (literally) like the header here are too BIG (ik) etc.</h4>
+        <h4>please do send me an email :)</h4>
+    </div>
+
+    <div class="email-container">
+        <div class="email">
             <p>jk7948677@gmail.com</p>
         </div>
-        <button>copy</button>
+        <button class="copy-button" onclick={copyLink}>
+            <img 
+                class="copy-svg" 
+                src={copy ? '/images/tick.svg' : '/images/copy.svg'} 
+                alt={copy ? 'Copied' : 'Copy email'}>
+        </button>
     </div>
     
-</div> -->
+</div>
 
