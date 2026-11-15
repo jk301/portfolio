@@ -11,10 +11,10 @@
 </svelte:head>
 
 <nav>
-	<a href="">about</a>
-	<a href="">skill-set</a>
-	<a href="">projects</a>
-	<a href="">contact-details</a>
+	<a href="#top">about</a>
+	<a href="#skill">skill-set</a>
+	<a href="#project">projects</a>
+	<a href="#contact">contact-details</a>
 </nav>
 
 {@render children()}

@@ -23,7 +23,7 @@
     </div>
 </div>
 
-<div class="skill-section">
+<div class="skill-section" id="skill">
     <div class="section-header">
         <h1>skill-set</h1>
     </div>
@@ -97,7 +97,7 @@
     </div>
 </div>
 
-<div class="project-section">
+<div class="project-section" id="project" >
     <div class="section-header">
         <h1>Projects</h1>
     </div>
@@ -137,7 +137,7 @@
 </div>
 
 
-<div class="contact-section">
+<div class="contact-section" id="contact">
     <div class="section-header">
         <h1>contact details</h1>
     </div>
